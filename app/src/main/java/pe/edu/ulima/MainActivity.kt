@@ -20,6 +20,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import pe.edu.ulima.ui.login.uis.LoginScreen
+import pe.edu.ulima.ui.login.uis.PokemonScreen
 import pe.edu.ulima.ui.login.uis.SplashScreen
 import pe.edu.ulima.ui.theme.*
 
@@ -35,7 +36,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     //SplashScreen()
-                    LoginScreen()
+                    //LoginScreen()
+                    PokemonScreen()
                 }
             }
         }

@@ -95,6 +95,34 @@ fun LoginScreen(){
                 }) {
                 Text(text = "Ingresar", fontSize = 20.sp)
             }
+            //boton ingresar con Google
+            Button(
+                modifier = Modifier.fillMaxWidth().padding(top = 5.dp, start = 50.dp, end = 50.dp),
+                colors = ButtonDefaults.buttonColors(
+                    backgroundColor = white,
+                ),
+                onClick = {
+                    println("+++++++++++++++++++++++++++++++++")
+
+                    println("usuario: ${userText.text}")
+                    println("password: $passwordText.text")
+                    println("+++++++++++++++++++++++++++++++++")
+                }) {
+                Image(
+                    painter = painterResource(id = R.drawable.ic_google),
+                    contentDescription = "Logo Google",
+                    modifier = Modifier
+                        .size(30.dp).padding(end = 10.dp),
+//                    colorFilter = ColorFilter.tint(
+//                        color = orange
+//                    )
+                )
+                Text(text = "Ingresar con Google", fontSize = 20.sp)
+            }
+            Divider(
+                modifier = Modifier.fillMaxWidth().padding(top= 10.dp, bottom = 10.dp),
+                thickness = 2.dp
+            )
         }
     }
 
